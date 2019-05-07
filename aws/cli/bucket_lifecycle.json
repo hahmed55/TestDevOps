@@ -1,0 +1,13 @@
+{
+    "Rules": [
+        {
+            "Expiration": {
+                "Days": 30
+            },
+            "Filter": {
+                "Prefix": "clo-factory/"
+            },
+            "Status": "Enabled"
+        }
+    ]
+}
