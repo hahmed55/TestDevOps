@@ -1,0 +1,16 @@
+---
+
+- name: Create a lifecycle rule for a bucket
+  hosts: local
+  connection: local
+
+  gather_facts: Yes
+
+  tasks:
+  - name: Create a lifecycle rule
+    s3_lifecycle:
+      name: clordsbackup
+      expiration_days: 30
+      prefix: clo-factory/
+      status: enabled
+      state: present
