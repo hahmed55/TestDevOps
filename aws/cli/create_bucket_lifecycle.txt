@@ -1,0 +1,9 @@
+Using the bucket_lifecycle.json file that contains the lifecycle configuraion, the following command can be used to create the life cycle:
+
+aws s3api put-bucket-lifecycle-configuration --bucket clordsbackup --lifecycle-configuration file://bucket_lifecycle.json
+
+To check the existing lifecycle configurations:
+aws s3api get-bucket-lifecycle-configuration --bucket clordsbackup
+
+To delete the existing lifecycle configurations:
+aws s3api delete-bucket-lifecycle --bucket clordsbackup
